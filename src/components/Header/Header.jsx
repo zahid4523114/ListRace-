@@ -50,7 +50,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-semibold" to="#">
+                <Link className="nav-link fw-semibold" to="/blog">
                   BLOG
                 </Link>
               </li>

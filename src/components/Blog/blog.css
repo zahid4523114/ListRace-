@@ -1,0 +1,8 @@
+.news-card {
+  box-shadow: 1px 1px 3px rgb(202, 202, 202);
+  transition: box-shadow 0.3s;
+}
+
+.news-card:hover {
+  box-shadow: 5px 5px 10px rgb(164, 164, 164);
+}

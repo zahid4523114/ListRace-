@@ -5,6 +5,7 @@ import Main from "./components/Layout/Main.jsx";
 import Home from "./components/home/Home.jsx";
 import HowItWorks from "./components/How-it-works/HowItWorks.jsx";
 import Explore from "./components/Explore/Explore.jsx";
+import Blog from "./components/Blog/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/explore",
         element: <Explore></Explore>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
       },
     ],
   },
