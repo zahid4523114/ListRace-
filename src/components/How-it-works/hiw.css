@@ -1,0 +1,8 @@
+.hiw-card {
+  transition: background-color 1s;
+}
+
+.hiw-card:hover {
+  background-color: #ff545a;
+  color: white;
+}
