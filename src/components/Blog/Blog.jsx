@@ -36,8 +36,9 @@ const Blog = () => {
                   </p>
                 </div>
                 <p style={{ fontSize: "14px" }} className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the cards content.
+                  To expedite your quest for your desired place, employ
+                  effective research, ask locals, leverage technology, and trust
+                  your instincts.
                 </p>
               </div>
             </div>
@@ -63,8 +64,9 @@ const Blog = () => {
                   </p>
                 </div>
                 <p style={{ fontSize: "14px" }} className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the cards content.
+                  To expedite your quest for your desired place, employ
+                  effective research, ask locals, leverage technology, and trust
+                  your instincts.
                 </p>
               </div>
             </div>
@@ -90,8 +92,9 @@ const Blog = () => {
                   </p>
                 </div>
                 <p style={{ fontSize: "14px" }} className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the cards content.
+                  To expedite your quest for your desired place, employ
+                  effective research, ask locals, leverage technology, and trust
+                  your instincts.
                 </p>
               </div>
             </div>

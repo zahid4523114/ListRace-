@@ -22,8 +22,9 @@ const HowItWorks = () => {
                   </p>
                   <h5 className="card-title mt-4 fw-bold">Choose what to Do</h5>
                   <p className="card-text my-4">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the cards content.
+                    Amid endless options, making the right choice demands
+                    deliberation, intuition, and sometimes, a leap of faith.
+                    Choose wisely, embrace life.
                   </p>
                   <a
                     href="#"
@@ -45,8 +46,9 @@ const HowItWorks = () => {
                     Find what you want
                   </h5>
                   <p className="card-text my-4">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the cards content.
+                    In the labyrinth of life, serendipity guides us to find
+                    unexpected treasures, moments of joy, and profound
+                    self-discovery.
                   </p>
                   <a
                     href="#"
@@ -68,8 +70,9 @@ const HowItWorks = () => {
                     Explore amazing Place
                   </h5>
                   <p className="card-text my-4">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the cards content.
+                    Venturing into a world unknown, vibrant landscapes and
+                    vibrant culture captivate the senses, as we explore an
+                    amazing place anew.
                   </p>
                   <a
                     href="#"
