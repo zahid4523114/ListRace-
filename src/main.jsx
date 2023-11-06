@@ -6,6 +6,8 @@ import Home from "./components/home/Home.jsx";
 import HowItWorks from "./components/How-it-works/HowItWorks.jsx";
 import Explore from "./components/Explore/Explore.jsx";
 import Blog from "./components/Blog/Blog.jsx";
+import Review from "./components/Review/Review.jsx";
+import LogIn from "./components/LogIn/LogIn.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/review",
+        element: <Review></Review>,
+      },
+      {
+        path: "/logIn",
+        element: <LogIn></LogIn>,
       },
     ],
   },

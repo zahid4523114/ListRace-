@@ -1,11 +1,14 @@
 import React from "react";
 import "./blog.css";
+import blogImage1 from "../../images/blog/b1.jpg";
+import blogImage2 from "../../images/blog/b2.jpg";
+import blogImage3 from "../../images/blog/b3.jpg";
 
 const Blog = () => {
   return (
     <div>
-      <div className="container my-4">
-        <div className="my-5 d-flex justify-content-center align-items-center">
+      <div className="container mt-4 mb-5">
+        <div className=" d-flex justify-content-center align-items-center">
           <div className="text-center">
             <h3>NEWS AND ARTICLES</h3>
             <p>Always upto date with our latest News and Articles</p>
@@ -15,7 +18,7 @@ const Blog = () => {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="card border-0 rounded-0 news-card">
               <img
-                src="../../images/blog/b1.jpg"
+                src={blogImage1}
                 className="card-img-top rounded-0"
                 alt="..."
               />
@@ -42,7 +45,7 @@ const Blog = () => {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="card border-0 rounded-0 news-card">
               <img
-                src="../../images/blog/b2.jpg"
+                src={blogImage2}
                 className="card-img-top rounded-0"
                 alt="..."
               />
@@ -69,7 +72,7 @@ const Blog = () => {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="card border-0 rounded-0 news-card">
               <img
-                src="../../images/blog/b3.jpg"
+                src={blogImage3}
                 className="card-img-top rounded-0"
                 alt="..."
               />

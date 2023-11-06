@@ -42,7 +42,10 @@ const Home = () => {
               />
             </div>
             <div>
-              <button className="btn btn-danger p-lg-2 p-md-2 px-5">
+              <button
+                style={{ backgroundColor: "#6C63FF" }}
+                className="btn text-white p-lg-2 p-md-2 px-5"
+              >
                 Search
               </button>
             </div>

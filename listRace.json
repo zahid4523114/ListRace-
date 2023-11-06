@@ -8,7 +8,7 @@
     "price": "5$-300$",
     "placeHouse": "Restaurant",
     "client": "../src/images/clients/c1.png",
-    "placeDescription": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "placeDescription": "A dimly lit, cozy bar offering an inviting ambiance, skillfully crafted cocktails, friendly patrons, and the perfect setting for relaxation and conversation.",
     "condition": 0
   },
   {
@@ -20,7 +20,7 @@
     "price": "50$-500$",
     "placeHouse": "Hotel",
     "client": "../src/images/clients/c2.png",
-    "placeDescription": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "placeDescription": "A luxurious beachfront resort offering pristine beaches, lavish accommodations, gourmet dining, and a tranquil escape from everyday life.",
     "condition": 1
   },
   {
@@ -32,7 +32,7 @@
     "price": "5k$-10k$",
     "placeHouse": "Destination",
     "client": "../src/images/clients/c3.png",
-    "placeDescription": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "placeDescription": "Embark on a captivating Europe tour filled with historic landmarks, diverse cultures, culinary delights, and breathtaking landscapes. Unforgettable adventures await.",
     "condition": 0
   },
   {
@@ -44,7 +44,7 @@
     "price": "15k$-15k$",
     "placeHouse": "Real Estate",
     "client": "../src/images/clients/c4.png",
-    "placeDescription": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "placeDescription": "A serene oasis of clear, shimmering water, the swimming pool invites relaxation and play under the warm sun's embrace.",
     "condition": 1
   },
   {
@@ -56,7 +56,7 @@
     "price": "500$-1200$",
     "placeHouse": "Automation",
     "client": "../src/images/clients/c2.png",
-    "placeDescription": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "placeDescription": "A beautifully restored vintage car, a timeless masterpiece of automotive craftsmanship, evoking nostalgia and admiration with its classic charm.",
     "condition": 0
   },
   {
@@ -68,7 +68,7 @@
     "price": "5k$-10k$",
     "placeHouse": "Destination",
     "client": "../src/images/clients/c3.png",
-    "placeDescription": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "placeDescription": "Experience the enchanting beauty of Thailand's tropical landscapes, rich cultural heritage, and vibrant street markets on an unforgettable tour.",
     "condition": 1
   }
 ]

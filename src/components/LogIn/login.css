@@ -1,0 +1,33 @@
+@media (width > 1024px) {
+  .image-container {
+    width: 50%;
+  }
+  .input-container {
+    width: 50%;
+  }
+  .login-image {
+    width: 80%;
+  }
+}
+@media (768px < width <= 1024px) {
+  .image-container {
+    width: 50%;
+  }
+  .input-container {
+    width: 50%;
+  }
+  .login-image {
+    width: 80%;
+  }
+}
+@media (425px < width <= 768px) {
+  .image-container {
+    width: 100%;
+  }
+  .input-container {
+    width: 100%;
+  }
+  .login-image {
+    width: 80%;
+  }
+}

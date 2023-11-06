@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="navbar sticky-top navbar-expand-lg bg-white">
         <div className="container-fluid p-lg-3">
           <Link className="navbar-brand fw-bolder fs-4" to="/home">
-            List <span style={{ color: "#f43032" }}>Race</span>
+            List <span style={{ color: "#6C63FF" }}>Race</span>
           </Link>
           <button
             className="navbar-toggler"
@@ -55,7 +55,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-semibold" to="#">
+                <Link className="nav-link fw-semibold" to="logIn">
                   LOG IN
                 </Link>
               </li>

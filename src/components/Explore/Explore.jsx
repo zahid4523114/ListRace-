@@ -75,15 +75,15 @@ const Explore = () => {
                     )}
                     {e.condition !== 0 ? (
                       <button
-                        style={{ fontSize: "14px" }}
-                        className="border-0 btn btn-primary p-1"
+                        style={{ fontSize: "14px", backgroundColor: "#6C63FF" }}
+                        className="border-0 btn text-white p-1"
                       >
                         Book Now
                       </button>
                     ) : (
                       <button
-                        style={{ fontSize: "14px" }}
-                        className="border-0 btn btn-primary p-1"
+                        style={{ fontSize: "14px", backgroundColor: "#6C63FF" }}
+                        className="border-0 btn text-white p-1"
                       >
                         No Booking
                       </button>
