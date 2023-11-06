@@ -8,6 +8,7 @@ import Explore from "./components/Explore/Explore.jsx";
 import Blog from "./components/Blog/Blog.jsx";
 import Review from "./components/Review/Review.jsx";
 import LogIn from "./components/LogIn/LogIn.jsx";
+import SignUp from "./components/SignUp/SignUp.jsx";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/logIn",
         element: <LogIn></LogIn>,
+      },
+      {
+        path: "/signUp",
+        element: <SignUp></SignUp>,
       },
     ],
   },

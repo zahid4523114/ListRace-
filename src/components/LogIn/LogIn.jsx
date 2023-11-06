@@ -1,11 +1,11 @@
 import React from "react";
 import "./login.css";
 import { Link } from "react-router-dom";
-import formLogo from "../../logo/undraw_remotely.svg";
+import formLogo from "../../logo/undraw_mobile.svg";
 
 const LogIn = () => {
   return (
-    <div className="container d-flex justify-content-between flex-lg-row flex-md-column flex-column my-4 ">
+    <div className="container d-flex justify-content-between align-items-lg-center flex-lg-row flex-md-column flex-column my-4 ">
       <div className=" image-container">
         <img
           className="d-lg-block login-image d-md-block d-none"
@@ -21,6 +21,7 @@ const LogIn = () => {
               style={{ outline: "none" }}
               placeholder="Email"
               className="px-4 container-fluid py-2"
+              name="email"
               type="email"
             />
           </div>
@@ -29,12 +30,13 @@ const LogIn = () => {
               style={{ outline: "none" }}
               placeholder="Password"
               className="px-4 container-fluid py-2"
+              name="password"
               type="password"
             />
           </div>
         </div>
         <div className="d-flex justify-content-between">
-          <Link to="" className="d-block">
+          <Link to="/signUp" className="d-block">
             Create an account.
           </Link>
           <Link to="" className="d-block">
