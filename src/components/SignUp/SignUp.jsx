@@ -2,8 +2,26 @@ import React from "react";
 import "./signUp.css";
 import { Link } from "react-router-dom";
 import formLogo from "../../logo/undraw_sign_up.svg";
+import toast from "react-hot-toast";
 
 const SignUp = () => {
+  const handleSignUP = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    if (password.length >= 8) {
+      console.log(
+        `User email: ${email} User password:${password.length} user:${name}`
+      );
+      form.reset();
+    } else {
+      toast.error(`Password must be 8 characters`);
+    }
+  };
+
   return (
     <div>
       <div className="container d-flex justify-content-between align-items-lg-center flex-lg-row flex-md-column flex-column my-4 ">
@@ -14,15 +32,15 @@ const SignUp = () => {
             alt=""
           />
         </div>
-        <div className="input-container">
+        <form onSubmit={handleSignUP} className="input-container">
           <h2 className="mt-lg-0 mt-md-3 mt-3 text-center">Sign Up</h2>
           <div>
             <div className="my-4">
               <input
                 style={{ outline: "none" }}
                 placeholder="User name"
-                className="px-4 container-fluid py-2"
-                name="userName"
+                className="form-control required px-4 container-fluid py-2"
+                name="name"
                 type="text"
               />
             </div>
@@ -30,7 +48,7 @@ const SignUp = () => {
               <input
                 style={{ outline: "none" }}
                 placeholder="Email"
-                className="px-4 container-fluid py-2"
+                className="form-control required px-4 container-fluid py-2"
                 name="email"
                 type="email"
               />
@@ -39,7 +57,7 @@ const SignUp = () => {
               <input
                 style={{ outline: "none" }}
                 placeholder="Password"
-                className="px-4 container-fluid py-2"
+                className="form-control required px-4 container-fluid py-2"
                 name="password"
                 type="password"
               />
@@ -69,7 +87,7 @@ const SignUp = () => {
               OOGLE{" "}
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
