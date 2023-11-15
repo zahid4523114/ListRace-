@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./signUp.css";
 import { Link } from "react-router-dom";
 import formLogo from "../../logo/undraw_sign_up.svg";
 import toast from "react-hot-toast";
+import { AuthContext } from "../Context/AuthProvider";
 
 const SignUp = () => {
+  const { userRegister, auth } = useContext(AuthContext);
+
   const handleSignUP = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -12,14 +15,19 @@ const SignUp = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-    if (password.length >= 8) {
-      console.log(
-        `User email: ${email} User password:${password.length} user:${name}`
-      );
-      form.reset();
-    } else {
+    if (password.length < 8) {
       toast.error(`Password must be 8 characters`);
+      return;
     }
+
+    userRegister(email, password)
+      .then((result) => {
+        console.log(result.user);
+        form.reset();
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
 
   return (
@@ -64,7 +72,7 @@ const SignUp = () => {
             </div>
           </div>
           <div>
-            <Link to="/logIn" className="d-block">
+            <Link to="/logIn" className="d-block text-decoration-none">
               Already have an account.
             </Link>
           </div>

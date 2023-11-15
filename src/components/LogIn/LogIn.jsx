@@ -1,22 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./login.css";
 import { Link } from "react-router-dom";
 import formLogo from "../../logo/undraw_mobile.svg";
 import toast from "react-hot-toast";
+import { AuthContext } from "../Context/AuthProvider";
 
 const LogIn = () => {
+  const { userSignIn } = useContext(AuthContext);
   const handleSignIn = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
 
-    if (password.length >= 8) {
-      console.log(`User email: ${email} User password:${password.length}`);
-      form.reset();
-    } else {
+    if (password.length < 8) {
       toast.error(`Password less than 8 characters`);
+      return;
     }
+
+    userSignIn(email, password)
+      .then((result) => {
+        form.reset();
+        toast.success("LogIn successful");
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
   return (
     <div className="container d-flex justify-content-between align-items-lg-center flex-lg-row flex-md-column flex-column my-4 ">
@@ -50,10 +61,10 @@ const LogIn = () => {
           </div>
         </div>
         <div className="d-flex justify-content-between">
-          <Link to="/signUp" className="d-block">
+          <Link to="/signUp" className="d-block text-decoration-none">
             Create an account.
           </Link>
-          <Link to="" className="d-block">
+          <Link to="" className="d-block text-decoration-none">
             Forgot password?
           </Link>
         </div>

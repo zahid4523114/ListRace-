@@ -10,6 +10,7 @@ import Review from "./components/Review/Review.jsx";
 import LogIn from "./components/LogIn/LogIn.jsx";
 import SignUp from "./components/SignUp/SignUp.jsx";
 import { Toaster } from "react-hot-toast";
+import AuthProvider from "./components/Context/AuthProvider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -54,7 +55,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
-    <Toaster />
+    <AuthProvider>
+      <RouterProvider router={router}></RouterProvider>
+      <Toaster />
+    </AuthProvider>
   </React.StrictMode>
 );
