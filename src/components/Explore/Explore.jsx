@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./explore.css";
+import { Link } from "react-router-dom";
 
 const Explore = () => {
   const [explore, setExplore] = useState([]);
 
   useEffect(() => {
-    fetch("listRace.json")
+    fetch("http://localhost:5000/")
       .then((res) => res.json())
       .then((data) => setExplore(data));
   }, []);
 
-  console.log(explore);
+  //console.log(explore);
 
   return (
     <div>
@@ -74,12 +75,17 @@ const Explore = () => {
                       </p>
                     )}
                     {e.condition !== 0 ? (
-                      <button
-                        style={{ fontSize: "14px", backgroundColor: "#6C63FF" }}
-                        className="border-0 btn text-white p-1"
-                      >
-                        Book Now
-                      </button>
+                      <Link to={`/explore/${e.id}`}>
+                        <button
+                          style={{
+                            fontSize: "14px",
+                            backgroundColor: "#6C63FF",
+                          }}
+                          className="border-0 btn text-white p-1"
+                        >
+                          Book Now
+                        </button>
+                      </Link>
                     ) : (
                       <button
                         style={{ fontSize: "14px", backgroundColor: "#6C63FF" }}

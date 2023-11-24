@@ -11,6 +11,7 @@ import LogIn from "./components/LogIn/LogIn.jsx";
 import SignUp from "./components/SignUp/SignUp.jsx";
 import { Toaster } from "react-hot-toast";
 import AuthProvider from "./components/Context/AuthProvider.jsx";
+import ExploreDetails from "./components/ExploreDetails/ExploreDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,12 @@ const router = createBrowserRouter([
       {
         path: "/explore",
         element: <Explore></Explore>,
+      },
+      {
+        path: "/explore/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/explore/${params.id}`),
+        element: <ExploreDetails></ExploreDetails>,
       },
       {
         path: "/blog",
