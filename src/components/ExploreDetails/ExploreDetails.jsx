@@ -11,28 +11,29 @@ const ExploreDetails = () => {
     <div className="p-4">
       <div className="my-5">
         <div className="card border-0 mb-3">
-          <div className="row g-0">
-            <div className="col-md-4">
+          <div className="row g-3">
+            <div className="col-lg-4  col-md-6 ">
               <img src={image} className="img-fluid" alt="..." />
             </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <div className="d-flex justify-content-between align-items-center">
+            <div className="col-lg-8  col-md-6">
+              <div className="card-body p-0">
+                <div className="">
                   <h5 className="card-title fw-bold">{place}</h5>
-                  <h5 className="fw-bold">{price}</h5>
+                  <h5 className="fw-bold my-3">{price}</h5>
                 </div>
                 <p className="card-text">{placeDescription}</p>
                 <p className="card-text">
                   <small className="text-muted fw-bold">{ratings}</small>
                 </p>
                 <button className="btn bg-black text-white rounded-0 container-fluid fw-semibold">
-                  ADD TO CART
+                  CONFIRM BOOKING
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div className="my-5">
         <h4 className="mb-3 fw-bold">Want's to book more</h4>
         <div className="row g-3">
