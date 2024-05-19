@@ -6,12 +6,10 @@ const Explore = () => {
   const [explore, setExplore] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/")
+    fetch("http://localhost:5000/explore")
       .then((res) => res.json())
       .then((data) => setExplore(data));
   }, []);
-
-  //console.log(explore);
 
   return (
     <div>

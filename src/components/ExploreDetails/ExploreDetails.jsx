@@ -25,7 +25,10 @@ const ExploreDetails = () => {
                 <p className="card-text">
                   <small className="text-muted fw-bold">{ratings}</small>
                 </p>
-                <button className="btn bg-black text-white rounded-0 container-fluid fw-semibold">
+                <button
+                  style={{ backgroundColor: "#6C63FF" }}
+                  className="btn text-white rounded-0 container-fluid fw-semibold"
+                >
                   CONFIRM BOOKING
                 </button>
               </div>

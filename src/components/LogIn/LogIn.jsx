@@ -84,7 +84,7 @@ const LogIn = () => {
               className="fa-brands fa-google fa-bounce me-1"
               style={{ color: "#ffffff" }}
             ></i>
-            OOGLE{" "}
+            GOOGLE{" "}
           </button>
         </div>
       </form>

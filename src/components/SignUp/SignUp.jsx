@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 import { AuthContext } from "../Context/AuthProvider";
 
 const SignUp = () => {
-  const { userRegister, auth } = useContext(AuthContext);
+  const { userRegister } = useContext(AuthContext);
 
   const handleSignUP = (e) => {
     e.preventDefault();
